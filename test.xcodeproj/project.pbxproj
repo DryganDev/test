@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		58818FDB22A568620012D6F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58818FDA22A568620012D6F0 /* AppDelegate.swift */; };
-		58818FDD22A568620012D6F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58818FDC22A568620012D6F0 /* ViewController.swift */; };
+		58818FDD22A568620012D6F0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58818FDC22A568620012D6F0 /* TableViewController.swift */; };
 		58818FE022A568620012D6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58818FDE22A568620012D6F0 /* Main.storyboard */; };
 		58818FE222A568640012D6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58818FE122A568640012D6F0 /* Assets.xcassets */; };
 		58818FE522A568640012D6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58818FE322A568640012D6F0 /* LaunchScreen.storyboard */; };
+		58818FEF22A56A9A0012D6F0 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58818FED22A56A9A0012D6F0 /* DZNEmptyDataSet.framework */; };
+		58818FF022A56A9A0012D6F0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58818FEE22A56A9A0012D6F0 /* Kingfisher.framework */; };
+		589FABED22A56CE200C7BDB2 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FABEC22A56CE200C7BDB2 /* FirstTableViewController.swift */; };
+		589FABEF22A56CEC00C7BDB2 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FABEE22A56CEC00C7BDB2 /* SecondTableViewController.swift */; };
+		589FABF122A56D9A00C7BDB2 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FABF022A56D9A00C7BDB2 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58818FD722A568620012D6F0 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58818FDA22A568620012D6F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58818FDC22A568620012D6F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58818FDC22A568620012D6F0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		58818FDF22A568620012D6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58818FE122A568640012D6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58818FE422A568640012D6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58818FE622A568640012D6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58818FED22A56A9A0012D6F0 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
+		58818FEE22A56A9A0012D6F0 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		589FABEC22A56CE200C7BDB2 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		589FABEE22A56CEC00C7BDB2 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		589FABF022A56D9A00C7BDB2 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58818FEF22A56A9A0012D6F0 /* DZNEmptyDataSet.framework in Frameworks */,
+				58818FF022A56A9A0012D6F0 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				58818FD922A568620012D6F0 /* test */,
 				58818FD822A568620012D6F0 /* Products */,
+				58818FEC22A56A9A0012D6F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,34 @@
 		58818FD922A568620012D6F0 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				58818FDA22A568620012D6F0 /* AppDelegate.swift */,
-				58818FDC22A568620012D6F0 /* ViewController.swift */,
+				58818FDC22A568620012D6F0 /* TableViewController.swift */,
+				589FABEC22A56CE200C7BDB2 /* FirstTableViewController.swift */,
+				589FABEE22A56CEC00C7BDB2 /* SecondTableViewController.swift */,
+				58818FF222A56BC30012D6F0 /* Model */,
 				58818FDE22A568620012D6F0 /* Main.storyboard */,
 				58818FE122A568640012D6F0 /* Assets.xcassets */,
 				58818FE322A568640012D6F0 /* LaunchScreen.storyboard */,
 				58818FE622A568640012D6F0 /* Info.plist */,
+				58818FDA22A568620012D6F0 /* AppDelegate.swift */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		58818FEC22A56A9A0012D6F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58818FED22A56A9A0012D6F0 /* DZNEmptyDataSet.framework */,
+				58818FEE22A56A9A0012D6F0 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58818FF222A56BC30012D6F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				589FABF022A56D9A00C7BDB2 /* NetworkController.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +107,7 @@
 				58818FD322A568620012D6F0 /* Sources */,
 				58818FD422A568620012D6F0 /* Frameworks */,
 				58818FD522A568620012D6F0 /* Resources */,
+				58818FF122A56ABE0012D6F0 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -130,12 +164,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58818FF122A56ABE0012D6F0 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/DZNEmptyDataSet.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DZNEmptyDataSet.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58818FD322A568620012D6F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58818FDD22A568620012D6F0 /* ViewController.swift in Sources */,
+				589FABF122A56D9A00C7BDB2 /* NetworkController.swift in Sources */,
+				589FABEF22A56CEC00C7BDB2 /* SecondTableViewController.swift in Sources */,
+				589FABED22A56CE200C7BDB2 /* FirstTableViewController.swift in Sources */,
+				58818FDD22A568620012D6F0 /* TableViewController.swift in Sources */,
 				58818FDB22A568620012D6F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +346,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z3FSAU76Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = api.drygan.dev.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +368,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z3FSAU76Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = api.drygan.dev.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
